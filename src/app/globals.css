@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "../styles/brand-fonts.css";
+
+html,
+body {
+  /* Nothing may ever extend horizontally beyond the viewport, so the
+     page always stays within the header's left/right edges on any LCD */
+  overflow-x: clip;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* ------------------------------------------------------------------ */
+  /* Type scale (fluid, rem-based)                                       */
+  /* Original design sizes for the condensed display font. Because the   */
+  /* brand body/display fonts (Helvetica Neue) are wider than the        */
+  /* original, every size is multiplied by --type-compensation so the    */
+  /* rendered text keeps the exact same visual size and width.           */
+  /*   H1    32px -> 88px   (2rem   -> 5.5rem)                           */
+  /*   H2    28px -> 60px   (1.75rem -> 3.75rem)                         */
+  /*   H3    20px -> 32px   (1.25rem -> 2rem)                            */
+  /*   Body  16px -> 22px   (1rem   -> 1.375rem)                         */
+  /*   Label 12px -> 16px   (0.75rem -> 1rem)                            */
+  /* The slope is steep so text stays readable on big LCD/TV screens.    */
+  /* ------------------------------------------------------------------ */
+  --type-compensation: 0.75;
+
+  --text-h1-size: calc(clamp(2rem, 1.2rem + 3vw, 5.5rem) * var(--type-compensation));
+  --text-h2-size: calc(clamp(1.75rem, 1.1rem + 1.6vw, 3.75rem) * var(--type-compensation));
+  --text-h3-size: calc(clamp(1.25rem, 1.05rem + 0.7vw, 2rem) * var(--type-compensation));
+  --text-body-size: calc(clamp(1rem, 0.9rem + 0.35vw, 1.375rem) * var(--type-compensation));
+  --text-label-size: calc(clamp(0.8rem, 0.7rem + 0.25vw, 1.125rem) * var(--type-compensation));
+
+  /* Tailwind's static text utilities are also made fluid so buttons,
+     prices, card text, badges etc. scale up on big screens too */
+  --text-xs-size: calc(clamp(0.75rem, 0.65rem + 0.25vw, 1.125rem) * var(--type-compensation));
+  --text-sm-size: calc(clamp(0.875rem, 0.75rem + 0.3vw, 1.375rem) * var(--type-compensation));
+  --text-base-size: var(--text-body-size);
+  --text-lg-size: calc(clamp(1.125rem, 0.9rem + 0.4vw, 1.75rem) * var(--type-compensation));
+}
+
+/* Very large screens (TV / big LCD): keep scaling fonts up so text is
+   readable from a distance on huge displays. */
+@media (min-width: 1536px) {
+  :root {
+    --text-h1-size: calc(clamp(4.5rem, 1.5rem + 3vw, 8rem) * var(--type-compensation));
+    --text-h2-size: calc(clamp(3.25rem, 1.2rem + 1.8vw, 5.5rem) * var(--type-compensation));
+    --text-h3-size: calc(clamp(1.9rem, 1.1rem + 0.7vw, 3rem) * var(--type-compensation));
+    --text-body-size: calc(clamp(1.375rem, 1rem + 0.4vw, 1.75rem) * var(--type-compensation));
+    --text-label-size: calc(clamp(1rem, 0.8rem + 0.25vw, 1.375rem) * var(--type-compensation));
+    --text-xs-size: calc(clamp(0.9375rem, 0.75rem + 0.25vw, 1.375rem) * var(--type-compensation));
+    --text-sm-size: calc(clamp(1.125rem, 0.9rem + 0.3vw, 1.5rem) * var(--type-compensation));
+    --text-lg-size: calc(clamp(1.5rem, 1.2rem + 0.4vw, 2.25rem) * var(--type-compensation));
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-brand-body);
+  --font-display: var(--font-brand-display);
+  --font-mono: var(--font-geist-mono);
+
+  /* Letter-spacing system (generous, readable) */
+  --tracking-display: 0.06em;
+  --tracking-sub: 0.035em;
+
+  /* Semantic type tokens (headings bold, body regular) */
+  --text-h1: var(--text-h1-size);
+  --text-h1--line-height: 1.1;
+  --text-h2: var(--text-h2-size);
+  --text-h2--line-height: 1.15;
+  --text-h3: var(--text-h3-size);
+  --text-h3--line-height: 1.3;
+  --text-body: var(--text-body-size);
+  --text-body--line-height: 1.6;
+  --text-label: var(--text-label-size);
+  --text-label--line-height: 1.4;
+
+  /* Fluid overrides for Tailwind's static text utilities */
+  --text-xs: var(--text-xs-size);
+  --text-sm: var(--text-sm-size);
+  --text-base: var(--text-base-size);
+  --text-lg: var(--text-lg-size);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-brand-body);
+  font-size: var(--text-body-size);
+  line-height: 1.6;
+  /* Keep the scrollbar gutter always reserved so the fixed header
+     stays pixel-aligned with the page content on every screen */
+  scrollbar-gutter: stable;
+}
+
+/* Consistent letter spacing baseline for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-brand-display);
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,22 @@
+ src/Components/Common/BackToTop.jsx                |       2 [32m+[m[31m-[m
+ src/Components/Common/Footer.jsx                   |       6 [32m+[m[31m-[m
+ src/Components/Common/Header.jsx                   |       4 [32m+[m[31m-[m
+ src/Components/Common/PageHero.jsx                 |       9 [32m+[m[31m-[m
+ src/Components/HeroSection.jsx                     |      41 [32m+[m[31m-[m
+ src/Components/IntroSection.jsx                    |       2 [32m+[m[31m-[m
+ src/Components/ProductSection.jsx                  |       2 [32m+[m[31m-[m
+ src/Components/StatsSection.jsx                    |     104 [32m+[m[31m-[m
+ src/Components/StepsSection.jsx                    |      16 [32m+[m[31m-[m
+ src/app/aviso-medico/page.jsx                      |       2 [32m+[m[31m-[m
+ src/app/globals.css                                |      47 [32m+[m[31m-[m
+ src/app/layout.jsx                                 |      12 [32m+[m[31m-[m
+ src/app/nosotros/page.jsx                          |      12 [32m+[m[31m-[m
+ src/app/privacidad/page.jsx                        |       2 [32m+[m[31m-[m
+ src/app/producto/[slug]/loading.jsx                |       2 [32m+[m[31m-[m
+ src/app/producto/[slug]/page.jsx                   |       4 [32m+[m[31m-[m
+ src/app/terminos/page.jsx                          |       2 [32m+[m[31m-[m
+ src/fonts.ai                                       | 1043948 [32m+++++++++++++++++[m
+ src/styles/brand-fonts.css                         |      70 [32m+[m
+ terra-more-brand-font-files/public/fonts/README.md |      24 [32m+[m
+ .../src/styles/brand-fonts.css                     |      70 [32m+[m
+ 21 files changed, 1044276 insertions(+), 105 deletions(-)

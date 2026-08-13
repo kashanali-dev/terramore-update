@@ -1,0 +1,76 @@
+/*
+  Terra-More Brand Typography
+  Local webfonts loaded from /public/Fonts/.
+
+  Font mapping:
+  - Helvetica Neue : regular / body text (HelveticaNeue.ttc)
+  - Myriad Pro      : Hero body + hero buttons (MyriadPro-Regular.otf)
+  - Dx Monstral     : display / section headings (DxMonstral-Regular.otf)
+  - GC Vank         : stats sub-labels (GC Vank.otf)
+*/
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/HelveticaNeue.ttc") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/Fonts/MyriadPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dx Monstral";
+  src: url("/Fonts/DxMonstral-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GC Vank";
+  src: url("/Fonts/GC%20Vank.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-brand-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-brand-display: "Dx Monstral", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-brand-special: "Dx Monstral", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-brand-body);
+}
+
+.font-brand-body {
+  font-family: var(--font-brand-body);
+}
+
+.font-brand-display {
+  font-family: var(--font-brand-display);
+}
+
+.font-brand-special {
+  font-family: var(--font-brand-special);
+}
+
+.font-dx-monstral {
+  font-family: var(--font-brand-display);
+}
+
+.font-gc-vank {
+  font-family: "GC Vank", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-myriad-pro {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

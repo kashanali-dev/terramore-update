@@ -1,0 +1,173 @@
+
+> casa-angelina@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.11 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.191.3.228:3000
+✓ Ready in 6.1s
+
+○ Compiling / ...
+Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 17.6s (next.js: 15.3s, application-code: 2.2s)
+ GET / 200 in 1273ms (next.js: 52ms, application-code: 1221ms)
+[browser] Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/hero.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 597ms (next.js: 29ms, application-code: 568ms)
+ GET / 200 in 539ms (next.js: 11ms, application-code: 528ms)
+ GET / 200 in 416ms (next.js: 15ms, application-code: 401ms)
+ GET / 200 in 669ms (next.js: 13ms, application-code: 655ms)
+[browser] Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/hero.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/back.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+ GET / 200 in 483ms (next.js: 14ms, application-code: 469ms)
+[browser] Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/hero.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+✓ Compiled in 735ms
+ GET / 200 in 1494ms (next.js: 555ms, application-code: 939ms)
+ GET / 200 in 535ms (next.js: 147ms, application-code: 388ms)
+ GET / 200 in 1799ms (next.js: 575ms, application-code: 1224ms)
+ GET / 200 in 752ms (next.js: 336ms, application-code: 416ms)
+✓ Compiled in 265ms
+ GET / 200 in 1013ms (next.js: 590ms, application-code: 423ms)
+ GET / 200 in 345ms (next.js: 64ms, application-code: 281ms)
+✓ Compiled in 321ms
+ GET / 200 in 714ms (next.js: 367ms, application-code: 348ms)
+✓ Compiled in 612ms
+ GET / 200 in 1095ms (next.js: 513ms, application-code: 582ms)
+✓ Compiled in 158ms
+ GET / 200 in 1117ms (next.js: 358ms, application-code: 759ms)
+ GET / 200 in 381ms (next.js: 40ms, application-code: 342ms)
+✓ Compiled in 290ms
+ GET / 200 in 1095ms (next.js: 413ms, application-code: 682ms)
+ GET / 200 in 415ms (next.js: 49ms, application-code: 365ms)
+Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 1537ms (next.js: 11ms, application-code: 1526ms)
+ GET / 200 in 345ms (next.js: 11ms, application-code: 334ms)
+ GET / 200 in 345ms (next.js: 10ms, application-code: 336ms)
+ GET / 200 in 502ms (next.js: 39ms, application-code: 463ms)
+ GET / 200 in 561ms (next.js: 14ms, application-code: 547ms)
+[browser] Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/hero.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+○ Compiling /carrito ...
+ GET /carrito 200 in 4.2s (next.js: 4.0s, application-code: 212ms)
+[browser] Image with src "/bg.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+✓ Compiled in 587ms
+ GET /carrito 200 in 786ms (next.js: 392ms, application-code: 394ms)
+ GET / 200 in 780ms (next.js: 495ms, application-code: 285ms)
+✓ Compiled in 557ms
+ GET / 200 in 1067ms (next.js: 628ms, application-code: 439ms)
+✓ Compiled in 399ms
+ GET / 200 in 881ms (next.js: 464ms, application-code: 416ms)
+✓ Compiled in 369ms
+ GET / 200 in 2.1s (next.js: 1093ms, application-code: 1036ms)
+ GET / 200 in 485ms (next.js: 55ms, application-code: 430ms)
+✓ Compiled in 398ms
+ GET / 200 in 1221ms (next.js: 393ms, application-code: 828ms)
+ GET / 200 in 364ms (next.js: 36ms, application-code: 328ms)
+✓ Compiled in 331ms
+ GET / 200 in 1116ms (next.js: 453ms, application-code: 664ms)
+✓ Compiled in 681ms
+ GET / 200 in 997ms (next.js: 632ms, application-code: 365ms)
+Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 1504ms (next.js: 13ms, application-code: 1491ms)
+✓ Compiled in 467ms
+ GET / 200 in 1062ms (next.js: 609ms, application-code: 453ms)
+✓ Compiled in 140ms
+ GET / 200 in 871ms (next.js: 346ms, application-code: 525ms)
+ GET / 200 in 267ms (next.js: 18ms, application-code: 249ms)
+✓ Compiled in 338ms
+ GET / 200 in 1379ms (next.js: 491ms, application-code: 888ms)
+ GET / 200 in 331ms (next.js: 60ms, application-code: 271ms)
+✓ Compiled in 339ms
+ GET / 200 in 830ms (next.js: 437ms, application-code: 393ms)
+ GET / 200 in 1022ms (next.js: 51ms, application-code: 971ms)
+ GET / 200 in 681ms (next.js: 14ms, application-code: 667ms)
+ GET / 200 in 512ms (next.js: 16ms, application-code: 496ms)
+ GET / 200 in 510ms (next.js: 230ms, application-code: 280ms)
+Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 1774ms (next.js: 10ms, application-code: 1764ms)
+ GET / 200 in 653ms (next.js: 21ms, application-code: 632ms)
+[browser] Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/hero.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+✓ Compiled in 341ms
+ GET / 200 in 1138ms (next.js: 574ms, application-code: 564ms)
+Image with src "/back.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "95" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/flower.png" is using quality "85" which is not configured in images.qualities [75, 90]. Please update your config to [75, 85, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/steps.png" is using quality "80" which is not configured in images.qualities [75, 90]. Please update your config to [75, 80, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 899ms (next.js: 15ms, application-code: 885ms)

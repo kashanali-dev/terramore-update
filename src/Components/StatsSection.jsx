@@ -88,7 +88,7 @@ export default function StatsSection() {
     <section
       id="estadisticas"
       ref={sectionRef}
-      className="relative w-full min-h-screen md:min-h-fit flex flex-col justify-center items-center py-20 md:py-24 bg-[#0a0f0a] overflow-hidden"
+      className="relative w-full flex flex-col justify-center items-center py-12 md:py-24 bg-[#0a0f0a] overflow-hidden"
     >
       {/* Background Image Optimization */}
       <Image

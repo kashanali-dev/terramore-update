@@ -44,11 +44,8 @@ export default function QuoteClient() {
       .filter(Boolean)
       .join("\n");
 
-    window.open(
-      `https://wa.me/${SITE.whatsapp.cordoba}?text=${encodeURIComponent(message)}`,
-      "_blank",
-      "noopener,noreferrer",
-    );
+    const waHref = `https://web.whatsapp.com/send?phone=${SITE.whatsapp.cordoba}&text=${encodeURIComponent(message)}`;
+    window.open(waHref, "_blank", "noopener,noreferrer");
     setSent(true);
   };
 
@@ -235,7 +232,7 @@ export default function QuoteClient() {
             Si preferís, escribinos directamente:
           </p>
           <a
-            href={`https://wa.me/${SITE.whatsapp.cordoba}`}
+            href={`https://web.whatsapp.com/send?phone=${SITE.whatsapp.cordoba}&text=${encodeURIComponent(SITE.whatsappMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-center border border-[#dfd0bd]/50 hover:bg-[#dfd0bd]/10 text-[#dfd0bd] font-bold text-sm uppercase tracking-widest py-3.5 px-6 rounded-full transition-colors"

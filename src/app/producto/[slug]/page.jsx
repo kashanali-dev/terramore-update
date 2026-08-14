@@ -49,21 +49,6 @@ export default async function ProductPage({ params }) {
     description: product.resumen,
     brand: { "@type": "Organization", name: SITE.name },
     category: product.categoria,
-    review: {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: product.rating,
-        bestRating: 5,
-      },
-    },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "ARS",
-      price: product.precio.replace(/[^0-9.,]/g, "").replace(".", ""),
-      availability: "https://schema.org/InStock",
-      url: `${SITE.domain}/producto/${product.slug}`,
-    },
   };
 
   const breadcrumbLd = {
@@ -75,7 +60,7 @@ export default async function ProductPage({ params }) {
         "@type": "ListItem",
         position: 2,
         name: "Productos",
-        item: `${SITE.domain}/#pasos`,
+        item: `${SITE.domain}/#productos`,
       },
       {
         "@type": "ListItem",
@@ -112,7 +97,7 @@ export default async function ProductPage({ params }) {
               Inicio
             </Link>
             <span className="text-white/40">/</span>
-            <Link href="/#pasos" className="hover:text-[#dfd0bd] transition-colors">
+            <Link href="/#productos" className="hover:text-[#dfd0bd] transition-colors">
               Productos
             </Link>
             <span className="text-white/40">/</span>
@@ -152,7 +137,7 @@ export default async function ProductPage({ params }) {
                 <h3 className="text-h3 font-black uppercase tracking-sub text-white mt-4">
                   {p.nombre}
                 </h3>
-                <span className="text-[#dfd0bd] font-bold mt-2">{p.precio}</span>
+                <span className="text-[#dfd0bd] font-bold mt-2">{p.categoria}</span>
               </Link>
             ))}
           </div>

@@ -37,7 +37,7 @@ export default function FinalCtaSection() {
           {ctas.map((cta) => (
             <a
               key={cta.label}
-              href={`https://wa.me/${cta.number}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
+              href={`https://web.whatsapp.com/send?phone=${cta.number}&text=${encodeURIComponent(SITE.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#dfd0bd] hover:bg-white text-[#162713] font-black text-sm uppercase tracking-[0.15em] py-3.5 px-8 rounded-full transition-colors duration-300 w-full sm:w-auto"

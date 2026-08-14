@@ -96,7 +96,7 @@ export default function SedesSection() {
                 </div>
 
                 <a
-                  href={`https://wa.me/${sede.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
+                  href={`https://web.whatsapp.com/send?phone=${sede.whatsapp}&text=${encodeURIComponent(SITE.whatsappMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center justify-center gap-2 bg-[#dfd0bd] hover:bg-white text-[#162713] font-black text-sm uppercase tracking-[0.15em] py-3.5 px-6 rounded-full transition-colors duration-300"

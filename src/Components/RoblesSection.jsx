@@ -49,7 +49,7 @@ export default function RoblesSection() {
           </p>
 
           <a
-            href={`https://wa.me/${SITE.whatsapp.baires}?text=${encodeURIComponent("Hola Terramore, quiero consultar mi situación legal")}`}
+            href={`https://web.whatsapp.com/send?phone=${SITE.whatsapp.baires}&text=${encodeURIComponent(SITE.whatsappMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-flex items-center justify-center gap-2 bg-[#dfd0bd] hover:bg-white text-[#162713] font-black text-sm uppercase tracking-[0.15em] py-3.5 px-8 rounded-full transition-colors duration-300 w-full sm:w-fit"

@@ -4,15 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
-import { products } from "@/lib/products";
-
-function formatPrice(value) {
-  return Number(value).toLocaleString("es-AR", {
-    style: "currency",
-    currency: "ARS",
-    maximumFractionDigits: 0,
-  });
-}
+import { SITE, products } from "@/lib/products";
 
 export default function CartClient() {
   const { items, updateQty, removeItem, clear, count, ready } = useCart();
@@ -24,13 +16,13 @@ export default function CartClient() {
     .map((i) => ({ ...i, product: resolve(i.slug) }))
     .filter((i) => i.product);
 
-  const subtotal = rows.reduce((acc, i) => {
-    const price = Number(i.product.precio.replace(/[^0-9]/g, ""));
-    return acc + price * i.qty;
-  }, 0);
+  const waMessage = [
+    "Hola Terramore, quiero coordinar mi pedido:",
+    "",
+    ...rows.map(({ product, qty }) => `- ${product.nombre} (x${qty})`),
+  ].join("\n");
 
-  const shipping = rows.length ? 0 : 0;
-  const total = subtotal + shipping;
+  const waHref = `https://web.whatsapp.com/send?phone=${SITE.whatsapp.cordoba}&text=${encodeURIComponent(waMessage)}`;
 
   if (!ready) {
     return (
@@ -67,7 +59,7 @@ export default function CartClient() {
           </p>
         </div>
         <Link
-          href="/#pasos"
+          href="/#productos"
           className="bg-[#dfd0bd] hover:bg-white text-[#162713] font-black text-sm uppercase tracking-[0.15em] py-3.5 px-8 rounded-full transition-colors"
         >
           Ver productos
@@ -109,7 +101,6 @@ export default function CartClient() {
               >
                 {product.nombre}
               </Link>
-              <p className="text-[#dfd0bd] font-bold mt-1.5">{product.precio}</p>
             </div>
 
             <div className="flex items-center justify-between sm:justify-end gap-6">
@@ -165,15 +156,11 @@ export default function CartClient() {
         <dl className="flex flex-col gap-3 text-sm">
           <div className="flex justify-between">
             <dt className="text-white/75 font-normal">Productos ({count})</dt>
-            <dd className="text-white font-bold">{formatPrice(subtotal)}</dd>
+            <dd className="text-white font-bold">{count}</dd>
           </div>
           <div className="flex justify-between">
-            <dt className="text-white/75 font-normal">Envío</dt>
-            <dd className="text-[#dfd0bd] font-bold">Gratis</dd>
-          </div>
-          <div className="border-t border-white/10 pt-3 flex justify-between items-center">
-            <dt className="text-white font-bold uppercase tracking-wider">Total</dt>
-            <dd className="text-[#dfd0bd] text-h3 font-black">{formatPrice(total)}</dd>
+            <dt className="text-white/75 font-normal">Precio</dt>
+            <dd className="text-[#dfd0bd] font-bold">A confirmar por WhatsApp</dd>
           </div>
         </dl>
 
@@ -185,7 +172,7 @@ export default function CartClient() {
         ) : null}
 
         <a
-          href="https://wa.me/5493510000000?text=Hola%20Terramore%2C%20quiero%20cotizar%20mi%20pedido"
+          href={waHref}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setConfirmed(true)}
@@ -195,16 +182,16 @@ export default function CartClient() {
         </a>
 
         <Link
-          href="/#pasos"
+          href="/#productos"
           className="text-center border border-white/40 hover:border-[#dfd0bd] text-white hover:text-[#dfd0bd] font-bold text-sm uppercase tracking-[0.15em] py-3.5 px-8 rounded-full transition-colors"
         >
           Seguir comprando
         </Link>
 
         <p className="text-body text-white/70 font-normal">
-          Los precios son referenciales. El pedido final se confirma con nuestro
-          equipo por WhatsApp. Productos exclusivos para socios con
-          certificación REPROCANN.
+          El valor final de tu pedido se confirma con nuestro equipo por
+          WhatsApp. Productos exclusivos para socios con certificación
+          REPROCANN.
         </p>
       </aside>
     </div>

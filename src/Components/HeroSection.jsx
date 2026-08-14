@@ -70,11 +70,11 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Action Buttons with Increased Top Gap using mt properties */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mt-20 md:mt-32 pb-0">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mt-16 md:mt-20 lg:mt-32 pb-0">
           {CTAS.map((cta) => (
             <a
               key={cta.label}
-              href={`https://wa.me/${cta.number}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
+              href={`https://web.whatsapp.com/send?phone=${cta.number}&text=${encodeURIComponent(SITE.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto min-w-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-white text-white rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-[2px] whitespace-nowrap font-myriad-pro"

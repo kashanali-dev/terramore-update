@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { SITE } from "@/lib/products";
 
 const NAV_LINKS = [
   { label: "Inicio", href: "/" },
@@ -15,6 +16,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { count, ready } = useCart();
+
+  const waHref = `https://web.whatsapp.com/send?phone=${SITE.whatsapp.cordoba}&text=${encodeURIComponent(
+    SITE.whatsappMessage,
+  )}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,12 +102,14 @@ export default function Header() {
               ) : null}
             </Link>
 
-            <Link
-              href="/cotizar"
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-white/50 hover:border-white text-white font-bold text-sm tracking-wider uppercase py-2 px-7 rounded-full transition-all duration-200 whitespace-nowrap bg-white/5 hover:bg-white/10"
             >
               Consultar
-            </Link>
+            </a>
           </div>
 
           {/* Hamburger Menu Icon */}
@@ -188,13 +195,15 @@ export default function Header() {
           ))}
 
           <div className="pt-8 space-y-4">
-            <Link
-              href="/cotizar"
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="block text-center bg-[#dfd0bd] text-[#162713] font-bold text-sm uppercase tracking-widest py-3.5 rounded-full dynamic-click"
             >
               Consultar
-            </Link>
+            </a>
           </div>
         </div>
       </div>

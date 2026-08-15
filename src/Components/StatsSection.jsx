@@ -92,11 +92,11 @@ export default function StatsSection() {
     >
       {/* Background Image Optimization */}
       <Image
-        src="/back.png"
+        src="/back.webp"
         alt="Stats Background"
         fill
         loading="lazy"
-        quality={95}
+        quality={75}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none"
       />

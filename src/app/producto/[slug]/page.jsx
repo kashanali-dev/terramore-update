@@ -77,7 +77,7 @@ export default async function ProductPage({ params }) {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/bg.png"
+            src="/bg.webp"
             alt=""
             fill
             quality={75}

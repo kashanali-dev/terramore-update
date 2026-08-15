@@ -68,7 +68,7 @@ export default function ArmedicSection() {
     >
       {/* Background image + green overlay */}
       <Image
-        src="/back.png"
+        src="/back.webp"
         alt="Laboratorio Armedic"
         fill
         loading="lazy"

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function PageHero({
   title,
   subtitle,
-  image = "/hero.png",
+  image = "/hero.webp",
   crumbs = [],
 }) {
   return (
@@ -14,7 +14,7 @@ export default function PageHero({
         alt=""
         fill
         priority
-        quality={85}
+        quality={75}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none"
       />

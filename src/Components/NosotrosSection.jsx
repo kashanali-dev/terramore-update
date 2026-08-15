@@ -9,11 +9,11 @@ export default function NosotrosSection() {
     >
       {/* Background image */}
       <Image
-        src="/flower.png"
+        src="/flower.webp"
         alt="Sierras cordobesas"
         fill
         loading="lazy"
-        quality={85}
+        quality={75}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none opacity-40"
       />

@@ -90,7 +90,7 @@ export default function PrivacidadPage() {
       <PageHero
         title="Política de Privacidad"
         subtitle="Tu información está protegida. Conocé cómo la recopilamos, la usamos y cómo ejercer tus derechos."
-        image="/back.png"
+        image="/back.webp"
         crumbs={[{ label: "Política de Privacidad" }]}
       />
 

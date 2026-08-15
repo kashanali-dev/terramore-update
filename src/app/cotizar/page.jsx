@@ -13,7 +13,7 @@ export default function CotizarPage() {
       <PageHero
         title="Cotizar ahora"
         subtitle="Completá tus datos y te enviamos tu cotización por WhatsApp. Te contestamos rápido, con una persona real."
-        image="/flower.png"
+        image="/flower.webp"
         crumbs={[{ label: "Cotizar" }]}
       />
       <section className="w-full py-16 md:py-20 bg-[#0a0f0a] min-h-[60vh]">

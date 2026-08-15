@@ -15,11 +15,11 @@ export default function FinalCtaSection() {
     >
       {/* Background image */}
       <Image
-        src="/steps.png"
+        src="/steps.webp"
         alt="Cannabis medicinal"
         fill
         loading="lazy"
-        quality={80}
+        quality={75}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none"
       />

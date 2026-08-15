@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import { SITE } from "@/lib/products";
 
@@ -11,32 +9,18 @@ const CTAS = [
 ];
 
 export default function HeroSection() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => setMounted(true), 0);
-    return () => window.clearTimeout(timer);
-  }, []);
-
-  if (!mounted) {
-    return (
-      <section className="relative min-h-screen w-full bg-[#0c150b] z-0"></section>
-    );
-  }
-
   return (
     <section
       id="inicio"
-      suppressHydrationWarning={true}
-      className="relative min-h-[80vh] lg:min-h-[100vh] w-full flex flex-col py-16 bg-[#0c150b] overflow-hidden"
+      className="relative min-h-[70vh] md:min-h-[32rem] lg:min-h-[100vh] w-full flex flex-col pt-16 pb-8 lg:pb-16 bg-[#0c150b] overflow-hidden"
     >
       {/* Background Image Optimization using Next.js Image Component */}
       <Image
-        src="/hero.png"
+        src="/hero.webp"
         alt="Campo de cultivo Terramore"
         fill
         priority
-        quality={85}
+        quality={90}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none"
       />
@@ -45,15 +29,9 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/35 z-10"></div>
 
       {/* Main Content Container */}
-      <div
-        suppressHydrationWarning={true}
-        className="relative z-20 w-full max-w-[min(85.5%,100rem)] mx-auto text-white flex flex-col gap-10 md:gap-14 pt-16 md:pt-24 pb-2"
-      >
+      <div className="relative z-20 w-full max-w-[min(85.5%,100rem)] mx-auto text-white flex flex-col gap-10 md:gap-14 pt-16 md:pt-24 pb-2">
         {/* Top Text Area */}
-        <div
-          className="flex flex-col gap-1.5 md:gap-2 max-lg:text-center max-lg:items-center"
-          suppressHydrationWarning={true}
-        >
+        <div className="flex flex-col gap-1.5 md:gap-2 max-lg:text-center max-lg:items-center">
           <h1 className="text-h1 font-black uppercase tracking-display antialiased max-w-[44rem]">
             Cannabis medicinal
             <br />
@@ -70,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Action Buttons with Increased Top Gap using mt properties */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mt-16 md:mt-20 lg:mt-32 pb-0">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mt-12 md:mt-10 lg:mt-32 pb-0">
           {CTAS.map((cta) => (
             <a
               key={cta.label}

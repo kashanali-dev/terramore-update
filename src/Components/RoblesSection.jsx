@@ -10,7 +10,7 @@ export default function RoblesSection() {
     >
       {/* Background image + green overlay */}
       <Image
-        src="/back.png"
+        src="/back.webp"
         alt="Estudio de Abogados Robles"
         fill
         loading="lazy"

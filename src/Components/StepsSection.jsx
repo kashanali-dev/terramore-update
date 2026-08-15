@@ -89,11 +89,11 @@ export default function StepsSection() {
     >
       {/* Background Image Optimization */}
       <Image
-        src="/steps.png"
+        src="/steps.webp"
         alt="Steps Background"
         fill
         loading="lazy"
-        quality={90}
+        quality={75}
         sizes="100vw"
         className="object-cover object-center z-0 pointer-events-none"
       />

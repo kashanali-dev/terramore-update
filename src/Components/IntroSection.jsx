@@ -14,12 +14,12 @@ export default function SplitIntroSection() {
       <div className="relative bg-[#040604] flex items-center px-8 sm:px-16 lg:px-24 py-16 md:py-0 justify-center md:justify-start">
         {/* Background Image Optimization */}
         <Image
-          src="/flower.png"
+          src="/flower.webp"
           alt="Information Background"
           fill
           priority
-          quality={95}
-          sizes="(max-w-768px) 100vw, 50vw"
+          quality={75}
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover object-center z-0 pointer-events-none"
         />
 

@@ -71,7 +71,7 @@ export default function AvisoMedicoPage() {
       <PageHero
         title="Aviso Médico"
         subtitle="Información importante sobre el uso de productos de cannabis medicinal y tu responsabilidad como paciente."
-        image="/back.png"
+        image="/back.webp"
         crumbs={[{ label: "Aviso Médico" }]}
       />
 

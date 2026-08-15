@@ -56,7 +56,7 @@ export default function NosotrosPage() {
       <PageHero
         title="Sobre Terramore"
         subtitle="Una ONG que une el derecho, la medicina y el laboratorio propio para que accedas de forma legal y acompañada al cannabis medicinal."
-        image="/steps.png"
+        image="/steps.webp"
         crumbs={[{ label: "About Us" }]}
       />
 
@@ -64,11 +64,11 @@ export default function NosotrosPage() {
       <section className="w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden">
         <div className="relative bg-[#040604] flex items-center px-8 sm:px-16 lg:px-24 py-16 justify-center md:justify-start">
           <Image
-            src="/fort.png"
+            src="/fort.webp"
             alt="Cultivo Terramore"
             fill
             priority
-            quality={95}
+            quality={75}
             sizes="(max-width:768px) 100vw, 50vw"
             className="object-cover object-center z-0 pointer-events-none"
           />

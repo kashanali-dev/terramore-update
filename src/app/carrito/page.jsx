@@ -13,7 +13,7 @@ export default function CartPage() {
       <PageHero
         title="Carrito de compras"
         subtitle="Revisá los productos de tu plan terapéutico y coordiná tu pedido con nuestro equipo."
-        image="/bg.png"
+        image="/bg.webp"
         crumbs={[{ label: "Carrito" }]}
       />
       <section className="w-full py-14 md:py-20 bg-[#0a0f0a] min-h-[60vh]">

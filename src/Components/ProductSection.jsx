@@ -13,7 +13,7 @@ export default function ProductSection() {
     >
       {/* Background Image Optimization using Next.js Image Component */}
       <Image
-        src="/bg.png"
+        src="/bg.webp"
         alt="Productos Terramore"
         fill
         loading="lazy"

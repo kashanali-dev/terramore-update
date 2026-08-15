@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { SITE } from "@/lib/products";
 
@@ -57,9 +58,17 @@ export default function Header() {
           <div className="shrink-0">
             <Link
               href="/"
-              className="text-white font-black text-h2 tracking-wider uppercase font-brand-display transition-transform duration-200 active:scale-95 block"
+              aria-label="Terramore"
+              className="block transition-transform duration-200 active:scale-95"
             >
-              TERRAMORE
+              <Image
+                src="/logo.png"
+                alt="Terramore"
+                width={568}
+                height={345}
+                priority
+                className="h-14 w-auto"
+              />
             </Link>
           </div>
 
@@ -154,8 +163,14 @@ export default function Header() {
         }`}
       >
         <div className="flex items-center justify-between px-6 h-24 border-b border-white/5">
-          <span className="text-white font-black text-h2 tracking-wider uppercase font-brand-display">
-            TERRAMORE
+          <span className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Terramore"
+              width={568}
+              height={345}
+              className="h-10 w-auto"
+            />
           </span>
           <button
             onClick={() => setIsOpen(false)}
@@ -178,7 +193,7 @@ export default function Header() {
         </div>
 
         <div className="flex-1 overflow-y-auto px-6 py-6 space-y-1">
-          {[...NAV_LINKS, { label: "Carrito", href: "/carrito" }].map((link) => (
+          {NAV_LINKS.map((link) => (
             <Link
               key={link.label}
               href={link.href}
@@ -186,15 +201,33 @@ export default function Header() {
               className="block text-white font-bold text-sm uppercase tracking-widest py-3.5 border-b border-white/5"
             >
               {link.label}
-              {link.label === "Carrito" && count > 0 ? (
-                <span className="ml-2 inline-block min-w-5 h-5 px-1 rounded-full bg-[#dfd0bd] text-[#162713] text-xs font-black text-center leading-5">
-                  {count}
-                </span>
-              ) : null}
             </Link>
           ))}
 
           <div className="pt-8 space-y-4">
+            <Link
+              href="/carrito"
+              onClick={() => setIsOpen(false)}
+              aria-label="Carrito de compras"
+              className="relative inline-flex text-white/90 hover:text-white transition-colors p-2 border border-white/20 rounded-full"
+            >
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+              >
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <path d="M3 6h18" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+              </svg>
+              {count > 0 ? (
+                <span className="absolute -top-0.5 -right-0.5 min-w-5 h-5 px-1 rounded-full bg-[#dfd0bd] text-[#162713] text-xs font-black flex items-center justify-center">
+                  {count}
+                </span>
+              ) : null}
+            </Link>
             <a
               href={waHref}
               target="_blank"

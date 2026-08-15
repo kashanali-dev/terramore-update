@@ -92,7 +92,7 @@ export default function TerminosPage() {
       <PageHero
         title="Términos y Condiciones"
         subtitle="Conocé las condiciones de uso de nuestros servicios y de la compra de nuestros productos medicinales."
-        image="/back.png"
+        image="/back.webp"
         crumbs={[{ label: "Términos y Condiciones" }]}
       />
 

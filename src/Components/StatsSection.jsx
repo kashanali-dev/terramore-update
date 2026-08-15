@@ -9,7 +9,7 @@ const stats = [
   { value: 2, prefix: "", suffix: " SEDES", label: "EN ARGENTINA" },
 ];
 
-function useInView(threshold = 0.15, rootMargin = "0px 0px -10% 0px") {
+function useInView(threshold = 0, rootMargin = "0px 0px -5% 0px") {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
 
@@ -36,27 +36,35 @@ function useInView(threshold = 0.15, rootMargin = "0px 0px -10% 0px") {
   return [ref, inView];
 }
 
-function useCountUp(target, active) {
+function useCountUp(target, active, duration = 1800) {
   const [count, setCount] = useState(0);
+  const rafRef = useRef(null);
 
   useEffect(() => {
     if (!active) return undefined;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const t = window.setTimeout(() => setCount(target), 0);
-      return () => window.clearTimeout(t);
+      setCount(target);
+      return undefined;
     }
-    let raf;
-    const duration = 1800;
+
     const start = performance.now();
     const tick = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(Math.round(target * eased));
-      if (progress < 1) raf = requestAnimationFrame(tick);
+      if (progress < 1) {
+        rafRef.current = requestAnimationFrame(tick);
+      } else {
+        setCount(target);
+      }
     };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [active, target]);
+    rafRef.current = requestAnimationFrame(tick);
+
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    };
+  }, [active, target, duration]);
 
   return count;
 }

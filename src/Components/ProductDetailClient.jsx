@@ -27,7 +27,7 @@ export default function ProductDetailClient({ product }) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
         {/* Gallery */}
         <div className="flex flex-col gap-4">
-          <div className="relative w-full aspect-square rounded-3xl bg-[#1b2f15]/95 border border-white/5 overflow-hidden shadow-2xl lg:max-w-[40rem] lg:mx-auto">
+          <div className="relative w-full aspect-square rounded-3xl bg-[#1b2f15]/95 border border-white/5 overflow-hidden shadow-2xl">
             <Image
               src={product.galeria[selected]}
               alt={product.nombre}
@@ -165,8 +165,8 @@ export default function ProductDetailClient({ product }) {
       </div>
 
       {/* Detail sections */}
-      <div className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 flex flex-col gap-6">
+      <div className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <section className="bg-[#1b2f15]/70 border border-white/5 rounded-3xl p-6 md:p-8">
             <h3 className="text-h3 font-black uppercase tracking-sub text-white mb-4">
               Descripción

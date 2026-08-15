@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/products";
 
 export default function Footer() {
@@ -64,9 +65,16 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link
               href="/"
-              className="text-white font-black text-h2 tracking-wider uppercase w-fit font-brand-display"
+              aria-label="Terramore"
+              className="block w-fit transition-transform duration-200 active:scale-95"
             >
-              TERRAMORE
+              <Image
+                src="/logo.png"
+                alt="Terramore"
+                width={568}
+                height={345}
+                className="h-16 md:h-20 w-auto"
+              />
             </Link>
             <p className="text-white/70 text-body font-normal max-w-[21rem]">
               {SITE.slogan}. ONG habilitada por el Ministerio de Salud ·

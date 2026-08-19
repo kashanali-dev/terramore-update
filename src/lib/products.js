@@ -10,7 +10,7 @@ export const SITE = {
   },
   whatsappMessage: "Hola Terramore, quiero más información",
   email: "contacto@terramore.com.ar",
-  instagram: "@terramorarg",
+  instagram: "@terramorearg",
   sedes: {
     cordoba: {
       name: "Córdoba",

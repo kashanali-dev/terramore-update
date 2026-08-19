@@ -10,13 +10,13 @@ export default function RoblesSection() {
     >
       {/* Background image + green overlay */}
       <Image
-        src="/back.webp"
-        alt="Estudio de Abogados Robles"
+        src="/sierras-robles.jpeg"
+        alt="Paisaje de las sierras de Córdoba"
         fill
         loading="lazy"
         quality={75}
         sizes="100vw"
-        className="object-cover object-center z-0 pointer-events-none"
+        className="object-cover object-[60%_40%] md:object-[50%_40%] lg:object-[50%_40%] z-0 pointer-events-none"
       />
       <div className="absolute inset-0 bg-linear-to-b from-[#0a0f0a]/95 via-[#162713]/90 to-[#0a0f0a]/95 z-10"></div>
 

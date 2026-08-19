@@ -9,15 +9,16 @@ export default function NosotrosSection() {
     >
       {/* Background image */}
       <Image
-        src="/flower.webp"
-        alt="Sierras cordobesas"
+        src="/sierras-nosotros.jpeg"
+        alt="Paisaje de las sierras de Córdoba"
         fill
         loading="lazy"
         quality={75}
         sizes="100vw"
-        className="object-cover object-center z-0 pointer-events-none opacity-40"
+        className="object-cover object-center z-0 pointer-events-none"
       />
       <div className="absolute inset-0 bg-linear-to-b from-[#040604]/80 via-[#040604]/85 to-[#040604]/90 z-10"></div>
+      <div className="absolute inset-y-0 right-0 w-[18%] bg-linear-to-l from-[#040604]/95 via-[#040604]/45 to-transparent z-10"></div>
 
       <div className="relative z-20 w-full max-w-[min(85.5%,100rem)] mx-auto flex flex-col items-center text-center gap-6">
         <span className="text-label font-bold tracking-widest uppercase text-[#dfd0bd]">

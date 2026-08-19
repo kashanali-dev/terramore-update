@@ -103,7 +103,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/terramorarg"
+                href="https://www.instagram.com/terramorearg"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -210,7 +210,7 @@ export default function Footer() {
             "Terramore Asociación Civil",
             "ONG habilitada por el Ministerio de Salud · REPROCANN",
             "© 2026 · www.terramore.com.ar",
-            "Instagram · @terramorarg",
+            "Instagram · @terramorearg",
           ].map((item, idx) => (
             <span
               key={item}

@@ -30,7 +30,7 @@ body {
   --text-h1-size: calc(clamp(2rem, 1.2rem + 3vw, 5.5rem) * var(--type-compensation));
   --text-h2-size: calc(clamp(1.75rem, 1.1rem + 1.6vw, 3.75rem) * var(--type-compensation));
   --text-h3-size: calc(clamp(1.25rem, 1.05rem + 0.7vw, 2rem) * var(--type-compensation));
-  --text-body-size: calc(clamp(1rem, 0.9rem + 0.35vw, 1.375rem) * var(--type-compensation));
+  --text-body-size: calc(clamp(1.125rem, 1rem + 0.4vw, 1.625rem) * var(--type-compensation));
   --text-label-size: calc(clamp(0.8rem, 0.7rem + 0.25vw, 1.125rem) * var(--type-compensation));
 
   /* Tailwind's static text utilities are also made fluid so buttons,
@@ -48,7 +48,7 @@ body {
     --text-h1-size: calc(clamp(4.5rem, 1.5rem + 3vw, 8rem) * var(--type-compensation));
     --text-h2-size: calc(clamp(3.25rem, 1.2rem + 1.8vw, 5.5rem) * var(--type-compensation));
     --text-h3-size: calc(clamp(1.9rem, 1.1rem + 0.7vw, 3rem) * var(--type-compensation));
-    --text-body-size: calc(clamp(1.375rem, 1rem + 0.4vw, 1.75rem) * var(--type-compensation));
+    --text-body-size: calc(clamp(1.5rem, 1.2rem + 0.4vw, 2rem) * var(--type-compensation));
     --text-label-size: calc(clamp(1rem, 0.8rem + 0.25vw, 1.375rem) * var(--type-compensation));
     --text-xs-size: calc(clamp(0.9375rem, 0.75rem + 0.25vw, 1.375rem) * var(--type-compensation));
     --text-sm-size: calc(clamp(1.125rem, 0.9rem + 0.3vw, 1.5rem) * var(--type-compensation));

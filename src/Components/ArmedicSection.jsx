@@ -5,7 +5,7 @@ const features = [
   {
     icon: (
       <svg
-        className="w-8 h-8"
+        className="w-10 h-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -24,7 +24,7 @@ const features = [
   {
     icon: (
       <svg
-        className="w-8 h-8"
+        className="w-10 h-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -43,7 +43,7 @@ const features = [
   {
     icon: (
       <svg
-        className="w-8 h-8"
+        className="w-10 h-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -87,12 +87,12 @@ export default function ArmedicSection() {
           <h2 className="text-h2 font-black tracking-display uppercase">
             Nuestro laboratorio propio garantiza lo que consumís.
           </h2>
-          <p className="text-body font-normal text-white/85 max-w-xl">
+          <p className="text-lg font-normal text-white/90 max-w-xl">
             Armedic es el laboratorio de análisis y control de calidad de
             Terramore. Cada producto — aceite, flor, crema o comestible — pasa
             por análisis antes de llegar a tus manos.
           </p>
-          <p className="text-body font-normal text-white/85 max-w-xl">
+          <p className="text-lg font-normal text-white/90 max-w-xl">
             Sabés exactamente qué estás consumiendo. En qué concentración. Con
             qué propósito. <span className="font-bold">Eso es lo que nos diferencia.</span>
           </p>
@@ -105,14 +105,14 @@ export default function ArmedicSection() {
               key={f.titulo}
               className="bg-[#1b2f15]/80 border border-white/10 rounded-3xl p-6 flex items-start gap-5 backdrop-blur-sm hover:border-[#dfd0bd]/40 transition-colors"
             >
-              <div className="w-14 h-14 shrink-0 rounded-full bg-[#dfd0bd]/10 border border-[#dfd0bd]/30 text-[#dfd0bd] flex items-center justify-center">
+              <div className="w-16 h-16 shrink-0 rounded-full bg-linear-to-br from-[#dfd0bd] via-[#e9dcc5] to-[#b9a582] text-[#162713] border border-white/20 shadow-lg flex items-center justify-center">
                 {f.icon}
               </div>
               <div className="min-w-0 flex flex-col gap-1.5">
                 <h3 className="text-h3 font-black uppercase tracking-sub">
                   {f.titulo}
                 </h3>
-                <p className="text-body font-normal text-white/80 leading-relaxed">
+                <p className="text-lg font-normal text-white/85 leading-relaxed">
                   {f.desc}
                 </p>
               </div>

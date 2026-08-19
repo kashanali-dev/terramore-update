@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 
 const testimonios = [
   {
@@ -68,6 +69,17 @@ export default function TestimoniosSection() {
       id="testimonios"
       className="relative w-full py-20 md:py-24 bg-[#162713] overflow-hidden text-white"
     >
+      <Image
+        src="/sierras-testimonios.jpeg"
+        alt="Paisaje de las sierras de Córdoba"
+        fill
+        loading="lazy"
+        quality={75}
+        sizes="100vw"
+        className="object-cover object-center z-0 pointer-events-none"
+      />
+      <div className="absolute inset-0 bg-linear-to-b from-[#162713]/90 via-[#162713]/70 to-[#162713]/90 z-10"></div>
+
       <div className="relative z-20 w-full max-w-[min(85.5%,100rem)] mx-auto flex flex-col items-center">
         <div className="mb-10 text-center">
           <span className="text-label font-bold tracking-widest uppercase text-[#dfd0bd]">
@@ -132,7 +144,7 @@ export default function TestimoniosSection() {
             type="button"
             aria-label="Testimonio anterior"
             onClick={() => goTo(active - 1)}
-            className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 items-center justify-center rounded-full border border-white/20 bg-[#0a0f0a]/60 backdrop-blur-sm text-white hover:border-[#dfd0bd] hover:text-[#dfd0bd] transition-colors z-10"
+            className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 items-center justify-center rounded-full border border-white/20 bg-[#0a0f0a]/60 backdrop-blur-sm text-white hover:border-[#dfd0bd] hover:text-[#dfd0bd] hover:cursor-pointer transition-colors z-10"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 19l-7-7 7-7" />
@@ -142,7 +154,7 @@ export default function TestimoniosSection() {
             type="button"
             aria-label="Testimonio siguiente"
             onClick={() => goTo(active + 1)}
-            className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 items-center justify-center rounded-full border border-white/20 bg-[#0a0f0a]/60 backdrop-blur-sm text-white hover:border-[#dfd0bd] hover:text-[#dfd0bd] transition-colors z-10"
+            className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 items-center justify-center rounded-full border border-white/20 bg-[#0a0f0a]/60 backdrop-blur-sm text-white hover:border-[#dfd0bd] hover:text-[#dfd0bd] hover:cursor-pointer transition-colors z-10"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 5l7 7-7 7" />

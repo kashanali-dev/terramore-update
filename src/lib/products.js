@@ -16,8 +16,8 @@ export const SITE = {
       name: "Córdoba",
       address: "Centro Cultural · Córdoba Capital",
       hours: [
-        { label: "Lunes a miércoles", time: "10 a 17 hs" },
-        { label: "Jueves y viernes", time: "10 a 20 hs" },
+        { label: "Lunes a miércoles", time: "10 a 17hs" },
+        { label: "Jueves y viernes", time: "10 a 20hs" },
       ],
       phone: "+54 9 351 680 9346",
     },
@@ -25,8 +25,8 @@ export const SITE = {
       name: "Buenos Aires",
       address: "Godoy Cruz 3217 · Palermo · Buenos Aires",
       hours: [
-        { label: "Lunes a miércoles", time: "11 a 19 hs" },
-        { label: "Jueves y viernes", time: "12 a 20 hs" },
+        { label: "Lunes a miércoles", time: "11 a 19hs" },
+        { label: "Jueves y viernes", time: "12 a 20hs" },
       ],
       phone: "+54 9 11 6607 4617",
     },

@@ -4,14 +4,14 @@ import { SITE } from "@/lib/products";
 const sedes = [
   {
     nombre: "Córdoba",
-    address: "Centro Cultural · Córdoba Capital",
+    address: "Pulqui · Industria Cultural · Rodríguez Peña 455 · Córdoba",
     hours: [
       { label: "Lunes a miércoles", time: "10 a 17 hs" },
       { label: "Jueves y viernes", time: "10 a 20 hs" },
     ],
     phone: "+54 9 351 680 9346",
     whatsapp: SITE.whatsapp.cordoba,
-    map: "https://www.google.com/maps?q=Centro+Cultural+Cordoba+Argentina&output=embed",
+    map: "https://www.google.com/maps?q=Pulqui+Industria+Cultural+Rodriguez+Peña+455+Cordoba&output=embed",
   },
   {
     nombre: "Buenos Aires",

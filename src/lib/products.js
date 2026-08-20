@@ -14,7 +14,7 @@ export const SITE = {
   sedes: {
     cordoba: {
       name: "Córdoba",
-      address: "Centro Cultural · Córdoba Capital",
+      address: "Pulqui · Industria Cultural · Rodríguez Peña 455 · Córdoba",
       hours: [
         { label: "Lunes a miércoles", time: "10 a 17 hs" },
         { label: "Jueves y viernes", time: "10 a 20 hs" },
